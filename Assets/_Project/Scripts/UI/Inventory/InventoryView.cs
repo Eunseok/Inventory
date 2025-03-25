@@ -1,4 +1,5 @@
 using System.Collections;
+using Managers;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityUtils;
@@ -19,7 +20,7 @@ namespace Systems.Inventory
             
             container = root.CreateChild("container");
             
-            var inventory = container.CreateChild("inventory");
+            var inventory = container.CreateChild("inventory").WithManipulator(new PanelDragManipulator());
             inventory.CreateChild("inventoryFrame");
             inventory.CreateChild("inventoryHeader").Add(new Label(panelName));
             
@@ -32,6 +33,9 @@ namespace Systems.Inventory
             
             ghostIcon = container.CreateChild("ghostIcon");
             ghostIcon.BringToFront();
+            
+            var closeButton = inventory.CreateChild<Button>("closeButton");
+            closeButton.clicked += () => UIManager.Instance.ClosePopup<Inventory>();
             
             yield return null;
         }

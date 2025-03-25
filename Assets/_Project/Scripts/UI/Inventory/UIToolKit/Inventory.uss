@@ -153,3 +153,23 @@
     color: rgb(0, 0, 0);
     font-size: 18px;
 }
+
+.closeButton {
+    position: absolute;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 0, 17);
+    -unity-font-style: bold;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    -unity-text-outline-width: 1px;
+    top: 17px;
+    left: 338px;
+}

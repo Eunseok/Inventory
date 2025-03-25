@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" engine="UnityEngine.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/_Project/Scripts/UI/Inventory/Inventory.uss?fileID=7433441132597879392&amp;guid=1bd26ccfdf3f3450fa5ebb6f7c054d0d&amp;type=3#Inventory" />
+    <Style src="project://database/Assets/_Project/Scripts/UI/Inventory/UIToolKit/Inventory.uss?fileID=7433441132597879392&amp;guid=1bd26ccfdf3f3450fa5ebb6f7c054d0d&amp;type=3#Inventory" />
     <ui:VisualElement name="container" class="container">
         <ui:VisualElement name="inventory" class="inventory">
             <ui:VisualElement name="inventoryHeader" class="inventoryHeader">
@@ -55,6 +55,7 @@
                 </ui:VisualElement>
                 <ui:VisualElement name="ghostIcon" class="ghostIcon" style="background-color: rgba(255, 255, 255, 0); top: 51px; left: -124px; visibility: hidden; translate: 135px 0;" />
             </ui:VisualElement>
+            <ui:Button text="X" parse-escape-sequences="true" display-tooltip-when-elided="true" name="closeButton" class="closeButton" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
