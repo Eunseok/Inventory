@@ -1,0 +1,155 @@
+.container {
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -unity-font-definition: url('project://database/Assets/External/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&guid=e3265ab4bf004d28a9537516768c1c75&type=3#LiberationSans');
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 197, 0);
+}
+
+.inventory {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    padding: 24px;
+    max-height: 500px;
+    border-radius: 50px;
+}
+
+.inventoryHeader {
+    position: absolute;
+    font-size: 32px;
+    top: -32px;
+    left: auto;
+    width: 350px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Label {
+    font-size: 24px;
+}
+
+.inventoryHeader {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+.inventoryFrame {
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 500px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-left-color: rgb(70, 87, 164);
+    border-right-color: rgb(70, 87, 164);
+    border-top-color: rgb(70, 87, 164);
+    border-bottom-color: rgb(70, 87, 164);
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+.slotIcon {
+    width: 60px;
+    height: 60px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    flex-shrink: 0;
+    position: relative;
+    left: auto;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.slotsContainer {
+    flex-grow: 1;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.slotFrame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(238, 217, 192);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-left-color: rgb(171, 139, 99);
+    border-right-color: rgb(171, 139, 99);
+    border-top-color: rgb(171, 139, 99);
+    border-bottom-color: rgb(171, 139, 99);
+}
+
+.slot {
+    flex-grow: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+.inventory {
+    flex-grow: 1;
+}
+
+.slotsContainer {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 6px;
+}
+
+.ghostIcon {
+    flex-grow: 1;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    visibility: visible;
+}
+
+.stackCount {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}

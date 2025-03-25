@@ -1,0 +1,60 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/Scripts/UI/Inventory/Inventory.uss?fileID=7433441132597879392&amp;guid=1bd26ccfdf3f3450fa5ebb6f7c054d0d&amp;type=3#Inventory" />
+    <ui:VisualElement name="container" class="container">
+        <ui:VisualElement name="inventory" class="inventory">
+            <ui:VisualElement name="inventoryHeader" class="inventoryHeader">
+                <ui:Label tabindex="-1" text="Inventory" parse-escape-sequences="true" display-tooltip-when-elided="true" class="Label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="inventoryFrame" class="inventoryFrame" />
+            <ui:VisualElement name="slotContainer" class="slotsContainer">
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="stackCount" class="stackCount" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="slotIcon" class="slotIcon" style="background-image: url(&apos;project://database/Assets/External/GUIPackCartoon/Demo/Sprites/Icons/Icons%20Colored/Armour/Sword%20(Border).png?fileID=2800000&amp;guid=24743680055304b4880cd96cb7763292&amp;type=3#Sword (Border)&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:VisualElement name="slotIcon" class="slotIcon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:VisualElement name="slotIcon" class="slotIcon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:VisualElement name="slotIcon" class="slotIcon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:VisualElement name="slotIcon" class="slotIcon" style="align-self: center;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:VisualElement name="slotIcon" class="slotIcon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:VisualElement name="slotIcon" class="slotIcon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:VisualElement name="slotIcon" class="slotIcon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="slot" class="slot">
+                    <ui:VisualElement name="slotFrame" class="slotFrame">
+                        <ui:VisualElement name="slotIcon" class="slotIcon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ghostIcon" class="ghostIcon" style="background-color: rgba(255, 255, 255, 0); top: 51px; left: -124px; visibility: hidden; translate: 135px 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
