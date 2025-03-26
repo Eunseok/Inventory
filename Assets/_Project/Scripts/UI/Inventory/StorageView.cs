@@ -23,11 +23,11 @@ namespace Systems.Inventory
         
         public event Action<Slot, Slot> OnDrop;
 
-        IEnumerator Start()
+        void Start()
         {
-            yield return InitializeView();
+            //yield return InitializeView();
             
-            ghostIcon.RegisterCallback<PointerMoveEvent>(OnPointerMove);
+            //ghostIcon.RegisterCallback<PointerMoveEvent>(OnPointerMove);
             ghostIcon.RegisterCallback<PointerUpEvent>(OnPointerUp);
 
             foreach (var slot in Slots)
@@ -36,7 +36,7 @@ namespace Systems.Inventory
             }
         }
 
-        public abstract IEnumerator InitializeView(int size = 20);
+        public abstract IEnumerator InitializeView(ViewModel viewModel);
         
         void OnPointerDown(Vector2 position, Slot slot)
         {
@@ -54,12 +54,12 @@ namespace Systems.Inventory
             ghostIcon.style.visibility = Visibility.Visible;
         }
 
-        void OnPointerMove(PointerMoveEvent evt)
-        {
-            if (!isDragging) return;
-            
-            //SetGhostIconPosition(evt.position);
-        }
+        // void OnPointerMove(PointerMoveEvent evt)
+        // {
+        //     if (!isDragging) return;
+        //     
+        //     SetGhostIconPosition(evt.position);
+        // }
 
         void OnPointerUp(PointerUpEvent evt)
         {

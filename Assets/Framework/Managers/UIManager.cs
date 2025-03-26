@@ -56,7 +56,7 @@ namespace Managers
         {
             if (_activeUIs.TryGetValue(uiName, out var existingUI))
             {
-                existingUI.gameObject.SetActive(true);
+                existingUI.Show();
                 return existingUI;
             }
 
@@ -131,7 +131,9 @@ namespace Managers
                 return;
             }
 
-            ClosePopup(ui);
+            ui.Hide();
+            
+            //ClosePopup(ui);
         }
         public void ClosePopup(UIBase ui)
         {

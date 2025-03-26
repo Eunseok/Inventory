@@ -16,5 +16,5 @@ public class BindableProperty<T> {
     [CreateProperty] // Allows binding to the UI in UI Toolkit
     public T Value => getter();
     
-    public static BindableProperty<T> Bind(Func<T> getter) => new BindableProperty<T>(getter);
+    public static BindableProperty<T> Bind(Func<T> getter) => new(getter);
 }

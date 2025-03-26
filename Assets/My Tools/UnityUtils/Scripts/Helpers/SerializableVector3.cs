@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 /// <summary>
 /// Represents a serializable version of the Unity Vector3 struct.
 /// </summary>
+[Serializable]
 public struct SerializableVector3 {
     public float x;
     public float y;

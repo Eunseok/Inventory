@@ -10,9 +10,9 @@ namespace Systems.Inventory
     {
         [SerializeField] string panelName = "Inventory";
 
-        public override IEnumerator InitializeView(int size = 20)
+        public override IEnumerator InitializeView(ViewModel viewModel)
         {
-            Slots = new Slot[size];
+            Slots = new Slot[viewModel.Capacity];
             root = document.rootVisualElement;
             root.Clear();
             
@@ -25,7 +25,7 @@ namespace Systems.Inventory
             inventory.CreateChild("inventoryHeader").Add(new Label(panelName));
             
             var slotsContainer = inventory.CreateChild("slotsContainer");
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < viewModel.Capacity; i++)
             {
                 var slot = slotsContainer.CreateChild<Slot>("slot");
                 Slots[i] = slot;

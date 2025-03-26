@@ -7,12 +7,10 @@ namespace Systems.Inventory {
     public class ItemDetails : ScriptableObject {
         
         public string Name;
-
         public int maxStack = 1;
-            
         public SerializableGuid Id = SerializableGuid.NewGuid();
 
-        private void AssignNewGuid() {
+        void AssignNewGuid() {
             Id = SerializableGuid.NewGuid();
         }
         

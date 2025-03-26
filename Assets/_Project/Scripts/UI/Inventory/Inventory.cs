@@ -1,14 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Platformer;
+using Scripts.UI;
 using Systems.Persistence;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Systems.Inventory {
-    public class Inventory : MonoBehaviour, IBind<InventoryData> {
+    public class Inventory : UIPopup, IBind<InventoryData> {
         [SerializeField] InventoryView view;
         [SerializeField] int capacity = 20;
         [SerializeField] List<ItemDetails> startingItems = new();
         [field: SerializeField] public SerializableGuid Id { get; set; } = SerializableGuid.NewGuid();
-        
+        [SerializeField] EventChannel<float> coinChannel;
 
         InventoryController controller;
         
@@ -18,7 +22,7 @@ namespace Systems.Inventory {
                 .WithCapacity(capacity)
                 .Build();
         }
-         
+
         public void Bind(InventoryData data) {
             Debug.Log($"Binding inventory {Id} to data {data.Id}");
             controller.Bind(data);

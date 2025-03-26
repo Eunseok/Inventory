@@ -19,6 +19,7 @@ namespace Systems.Inventory
         {
             StackLabel = this.CreateChild("slotFrame").CreateChild<Label>("stackCount");
             Icon = this.CreateChild<Image>("slotIcon");
+            
             RegisterCallback<PointerDownEvent>(OnPointerDown);
         }
 

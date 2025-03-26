@@ -1,4 +1,5 @@
 using Managers;
+using Platformer;
 using Scripts.UI;
 using Systems.Inventory;
 using UnityEngine;
@@ -12,15 +13,18 @@ namespace _Project.Scripts.UI.HUD
         
         Button statusButton;
         Button inventoryButton;
+        
+        Label coinLabel;
         void Awake()
         {
             uiDocument = GetComponent<UIDocument>();
             
             statusButton = uiDocument.rootVisualElement.Q<Button>("statusButton");
             inventoryButton = uiDocument.rootVisualElement.Q<Button>("inventoryButton");
-
             inventoryButton.clicked += OnInventoryButtonClick;
             statusButton.clicked += OnStatButtonClick;
+            
+            coinLabel = uiDocument.rootVisualElement.Q<Label>("coinLabel");
         }
 
         void OnInventoryButtonClick()
@@ -30,6 +34,11 @@ namespace _Project.Scripts.UI.HUD
         }
 
         void OnStatButtonClick()
+        {
+            
+        }
+
+        void UpdateCoinLabel()
         {
             
         }
